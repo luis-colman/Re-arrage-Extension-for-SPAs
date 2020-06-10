@@ -1,0 +1,56 @@
+{
+  "plugin_type": "widget",
+  "name": "Re-Arrange Elements",
+  "edit_page_url": "www.atticandbutton.com",
+  "form_schema": [
+    {
+      "default_value": "",
+      "field_type": "selector",
+      "name": "element_to_move",
+      "label": "Element to Move",
+      "options": {
+        "choices": null
+      }
+    },
+    {
+      "default_value": "beforebegin",
+      "field_type": "dropdown",
+      "name": "rearrange",
+      "label": "Re-arrange",
+      "options": {
+        "choices": [
+          {
+            "value": "beforebegin",
+            "label": "Before"
+          },
+          {
+            "value": "afterend",
+            "label": "After"
+          },
+          {
+            "value": "beforeend",
+            "label": "At the end of"
+          },
+          {
+            "value": "afterbegin",
+            "label": "At the beginning"
+          }
+        ]
+      }
+    },
+    {
+      "default_value": "",
+      "field_type": "selector",
+      "name": "reference_element",
+      "label": "Reference Element",
+      "options": null
+    }
+  ],
+  "description": "Re-Arrange Elements for React Applications",
+  "options": {
+    "apply_js": "var utils = window.optimizely.get('utils');\n\nutils.waitForElement(extension.element_to_move).then(function(elem) {\n  var referenceElem = document.querySelector(extension.reference_element);\n  var elemWrapperWidth = elem.parentNode.offsetWidth;\n  var elemWrapperHeight = elem.parentNode.offsetHeight;\n  var parentElemWidth = elem.parentNode.parentNode.offsetWidth;\n  var parentElemHeigth = elem.parentNode.parentNode.offsetHeight;\n\n  if(elemWrapperWidth == parentElemWidth && elemWrapperHeight == parentElemHeigth) {\n  \treferenceElem.insertAdjacentElement(extension.rearrange, elem.parentNode.parentNode);\n\t} \n\telse {\n\t\treferenceElem.insertAdjacentElement(extension.rearrange, elem.parentNode);\n\t}\n});",
+    "html": "",
+    "css": "",
+    "undo_js": ""
+  }
+}
