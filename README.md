@@ -4,7 +4,7 @@ This extension allows re-arranging elements on SPAs that break or have problems 
 
 (**_Note_**: This extension should work with most websites, but it may not work with all websites. This will depend on the structure of the DOM to change).
 
-## Install the "_Re-arrage Extension for SPAs_" Extension
+## Install the "_Re-arrage for SPAs_" Extension
 
 1. In your Optimizely account, navigate to "**_Implementation > Extensions_**".
 
