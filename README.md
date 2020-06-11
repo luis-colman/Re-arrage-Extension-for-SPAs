@@ -2,7 +2,9 @@
 
 This extension allows re-arranging elements on SPAs that break or have problems with the standard Re-Arrange feature of Optimizely's Visual Editor and/or other known JavaScript methods to move elements in the DOM.
 
-(**_Note_**: This extension should work with most websites, but it may not work with all websites. This will depend on the structure of the DOM to change).
+**_Important_**: This extension selects the parent node of the chosen element in order to prevent React from breaking. This should work for most websites, but it may not work with all websites. This will depend on the structure of the DOM to change. 
+
+Most elements that need to be re-injected/re-rendered have a parent node wrapping it alone. However, if the parent node of a given element is a big container that has many other elements within, this extension will move the entire container. In this case a different approach is to be taken and cases need to be evaluated individually.
 
 ## Install the "_Re-arrage Elements for SPAs_" Extension
 
