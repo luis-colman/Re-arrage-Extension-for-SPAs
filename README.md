@@ -1,6 +1,6 @@
 # Re-arrage Extension for SPAs
 
-This extension allows re-arranging elements on SPAs that break or have problems with the standard JavaScript methods to move elements in the DOM.
+This extension allows re-arranging elements on SPAs that break or have problems with the standard features of Optimizely's Visual Editor and/or known JavaScript methods to move elements in the DOM.
 
 (**_Note_**: This extension should work with most websites, but it may not work with all websites. This will depend on the structure of the DOM to change).
 
