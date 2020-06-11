@@ -20,7 +20,7 @@ This extension allows re-arranging elements on SPAs that break or have problems 
 
 5. If you want to see how the extension is built, simply click the extension name "**_Re-Arrange Elements for SPAs_**". In the "**_Editable Fields_**" panel, you can see and change the current fields the extension contains. Here you can also see the JavaScript code the extension uses by clicking on "**_Apply JS_**", where adjustments can be made - if needed/desired.
 
-6. Before you can use this extension, you need to enable it. After uploading the JSON file the extension will be in "**_draft_**" state. To enable the extension, navigate to "**_Implementation > Extensions_**" and click the **_..._** icon for the "**_Text Changes for SPAs**_" extension and select "**_Enable_**".
+6. Before you can use this extension, you need to enable it. After uploading the JSON file the extension will be in "**_draft_**" state. To enable the extension, navigate to "**_Implementation > Extensions_**" and click the **_..._** icon for the "**_Re-Arrange Elements for SPAs**_" extension and select "**_Enable_**".
 
 ![Image description](https://github.com/luis-colman/text-changes-for-spas/blob/master/images/enable_optimizely_extension.png)
 
